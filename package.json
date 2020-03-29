@@ -1,0 +1,28 @@
+{
+  "name": "aws-appsync-request",
+  "version": "1.0.0",
+  "description": "AWS Appsync wrapper to make signed requests to the GraphQL Client",
+  "main": "dist/index.js",
+  "types" : "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedepazos95/aws-appsync-request.git"
+  },
+  "author": "Federico Martin Pazos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fedepazos95/aws-appsync-request/issues"
+  },
+  "homepage": "https://github.com/fedepazos95/aws-appsync-request#readme",
+  "devDependencies": {
+    "@types/node": "^13.9.5",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.648.0",
+    "axios": "^0.19.2"
+  }
+}
