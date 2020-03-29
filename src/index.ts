@@ -1,6 +1,7 @@
 import Api from './Api';
 import * as URL from 'url';
-import AWS, { Endpoint } from 'aws-sdk';
+import * as AWS from 'aws-sdk';
+import { Endpoint } from 'aws-sdk';
 import * as V4Signer from 'aws-sdk/lib/signers/v4';
 import * as Util from 'aws-sdk/lib/util';
 
