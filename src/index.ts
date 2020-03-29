@@ -21,21 +21,24 @@ interface PostBodyGraphQL {
 };
 
 export class AppSync extends Api {
-  /**
-   * URL of the AppSync instance
-   */
   apiUrl: string;
-  /**
-   * AWS Region
-   */
   region: string;
 
+  /**
+   * Creates a wrapper to make signed requests to AppSync
+   * @param apiUrl URL of the AppSync instance
+   * @param region AWS Region
+   */
   constructor(apiUrl: string, region: string) {
     super({ baseURL: apiUrl });
     this.apiUrl = apiUrl;
     this.region = region;
   }
 
+  /**
+   * 
+   * @param post_body PostBodyGraphQL interface
+   */
   public query(post_body: PostBodyGraphQL) {
     const uri = URL.parse(this.apiUrl);
     const httpRequest = new AWS.HttpRequest(new Endpoint(uri.href), this.region);
