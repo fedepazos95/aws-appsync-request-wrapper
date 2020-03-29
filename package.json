@@ -1,6 +1,6 @@
 {
   "name": "aws-appsync-request-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AWS Appsync wrapper to make signed requests to the GraphQL Client",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
