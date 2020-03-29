@@ -6,13 +6,28 @@ import * as V4Signer from 'aws-sdk/lib/signers/v4';
 import * as Util from 'aws-sdk/lib/util';
 
 interface PostBodyGraphQL {
+  /**
+  * GraphQL query object.
+  */
   query: string,
+  /**
+   * Only required if multiple operations are present in the query.
+   */
   operationName: string,
+  /**
+   * Variables of the query.
+   */
   variables: object
 };
 
 export class AppSync extends Api {
+  /**
+   * URL of the AppSync instance
+   */
   apiUrl: string;
+  /**
+   * AWS Region
+   */
   region: string;
 
   constructor(apiUrl: string, region: string) {
